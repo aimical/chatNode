@@ -18,11 +18,11 @@ var io = require('socket.io').listen(server);
 var messages = [];
 
 io.sockets.on('connection', function(socket) {
-    socket.on('messages.read', function() {
-        socket.emit('messages.read', messages)
+    socket.on('getAllMessages', function() {
+        socket.emit('allMessages', messages)
     });
-    socket.on('messages.create', function(message) {
+    socket.on('createMessage', function(message) {
         messages.push(message);
-        io.sockets.emit('messages.add', message)
+        io.sockets.emit('addMessage', message)
     })
 });
