@@ -20,7 +20,7 @@ exports.findByEmailOrCreate = function (email, callback) {
         var user = new db.Users;
         user.email = email;
         user.name = email.split('@')[0];
-        user.general = gravatar.url(email);
+        user.avatarUrl = gravatar.url(email);
         user.save(callback)
     })
 };

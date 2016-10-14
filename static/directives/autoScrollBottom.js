@@ -1,4 +1,3 @@
-//autoScrollToBottom
 angular.module('chatNode').directive('autoScrollToBottom', function () {
     return {
         link: function (scope, element, attrs) {

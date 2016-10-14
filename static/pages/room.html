@@ -1,5 +1,5 @@
 <div class="panel panel-default room">
-    <div class="panel-heading room-header">TechNode</div>
+    <div class="panel-heading room-header">chatNode</div>
     <div class="panel-body room-content">
         <div class="list-group messages" auto-scroll-to-bottom>
             <div class="list-group-item message" ng-repeat="message in messages track by $index">
@@ -8,7 +8,7 @@
         </div>
         <form class="message-creator" ng-controller="MessageCreatorCtrl">
             <div class="form-group">
-                        <textarea required class="form-control message-input" ng-model="newMessage"
+                        <textarea style="resize: none;" required class="form-control message-input" ng-model="newMessage"
                                   ctrl-enter-break-line="createMessage()"
                                   placeholder="Ctrl+Enter to quick send"></textarea>
             </div>

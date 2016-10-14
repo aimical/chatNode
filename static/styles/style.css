@@ -1,0 +1,15 @@
+.navbar-right img {
+    height: 30px;
+    margin-top: 10px;
+}
+
+.navbar-right {
+    float: right;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+.navbar-header {
+    width: 100%;
+}
